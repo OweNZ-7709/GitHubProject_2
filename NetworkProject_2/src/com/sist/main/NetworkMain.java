@@ -26,6 +26,11 @@ public class NetworkMain extends JFrame{
 		//종료
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
+	public static Image getImage(ImageIcon ii, int width, int height)
+	{
+		Image dimg=ii.getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH);
+		return dimg;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try
